@@ -10,31 +10,13 @@ import treasureHuntImg from "../assets/treasurehunt.png";
 
 import "../JavaScript/index.js";
 import "../JavaScript/loader.js";
-// import "../JavaScript/userBox.js";
-// import "../CSS/landingPage/style.css";
-// import "../CSS/common/navBar.css";
-// import "../CSS/landingPage/parallaxScene.css";
-// import "../CSS/landingPage/slider.css";
-// import "../CSS/landingPage/carousel.css";
-// import "../CSS/landingPage/pushable-button.css";
-// import "../CSS/common/cartBox.css";
-// import "../CSS/common/userBox.css";
-// import "../CSS/common/bg-animation.css";
-// import "../CSS/common/loader.css";
-// import "../CSS/common/footer.css";
-import bg from "../images/landingPageAssets/background.png";
-import rock from "../images/landingPageAssets/rock.png";
-import earth from "../images/landingPageAssets/earth.png";
-import mid from "../images/landingPageAssets/mid.png";
-import foreground from "../images/landingPageAssets/foreground.png";
 
 import gamingImg from "../assets/gaming.png";
-import ideathonImg from "../assets/Ideathon.png";
+import ideathonImg from "../assets/ideathon.png";
 import itManagerImg from "../assets/itManager.png";
 import photographyImg from "../assets/photography.png";
 import { useDispatch } from "react-redux";
 import { updateEvent } from "../features/getEvents";
-import EventInfo from "./EventInfo";
 import { useNavigate } from "react-router-dom";
 
 const Events = () => {
