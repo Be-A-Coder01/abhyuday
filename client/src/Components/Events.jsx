@@ -13,7 +13,7 @@ import "../JavaScript/loader.js";
 
 import gamingImg from "../assets/gaming.png";
 import ideathonImg from "../assets/ideathon.png";
-import itManagerImg from "../assets/itManager.png";
+import itManagerImg from "../assets/itmanager.png";
 import photographyImg from "../assets/photography.png";
 import { useDispatch } from "react-redux";
 import { updateEvent } from "../features/getEvents";
