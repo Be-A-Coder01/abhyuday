@@ -337,11 +337,17 @@ const EventInfo = () => {
               </div>
               <div>
                 {/* <img src={charcater} alt="" /> */}
-                <Link to="/event-registration">
-                  <button className="registerButton w-4/12 text-lg py-2 ml-5 mb-10 md:text-xl rounded-md font-bold text-white md:ml-14 md:mb-10 md:py-3 md:w-3/12  lg:ml-16 lg:mb-10 lg:w-2/12 lg:py-3">
-                    Register
-                  </button>
-                </Link>
+
+                <button
+                  onClick={() => {
+                    window.location.href =
+                      "https://docs.google.com/forms/d/e/1FAIpQLScn3HY1clIbxEJl5pTtbU3ZAOfI_vbU_R4jsYArty15CmanBQ/viewform";
+                  }}
+                  className="registerButton w-4/12 text-lg py-2 ml-5 mb-10 md:text-xl rounded-md font-bold text-white md:ml-14 md:mb-10 md:py-3 md:w-3/12  lg:ml-16 lg:mb-10 lg:w-2/12 lg:py-3"
+                >
+                  Register
+                </button>
+
                 <ol class="relative border-s border-gray-200  dark:border-gray-700 ml-4 md:ml-16 lg:ml-14">
                   <li class="mb-10 ms-4 ">
                     <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>

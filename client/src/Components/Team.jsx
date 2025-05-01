@@ -40,28 +40,7 @@ const Team = () => {
             communications.
           </p>
         </div>
-        <div className="w-[460px] h-[350px]  bg-[#1E1E2D] rounded-xl p-6  flex flex-col items-center text-center shadow-lg">
-          {/* Profile Image */}
-          <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-pink-500 mb-4">
-            <img
-              src="" // <-- Replace this with your image path
-              alt="Sam"
-              className="object-cover w-full h-full"
-            />
-          </div>
 
-          {/* Name */}
-          <h2 className="text-white text-2xl font-bold">Sam</h2>
-
-          {/* Role */}
-          <p className="text-pink-400 text-lg font-semibold mb-4">Lady Boss</p>
-
-          {/* Description */}
-          <p className="text-gray-300 text-sm">
-            Event coordination expert managing complex logistics and team
-            communications.
-          </p>
-        </div>
         <div className="w-[460px] h-[350px]  bg-[#1E1E2D] rounded-xl p-6  flex flex-col items-center text-center shadow-lg">
           {/* Profile Image */}
           <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-pink-500 mb-4">
@@ -130,28 +109,7 @@ const Team = () => {
             communications.
           </p>
         </div> */}
-        <div className="w-[460px] h-[350px]  bg-[#1E1E2D] rounded-xl p-6  flex flex-col items-center text-center shadow-lg">
-          {/* Profile Image */}
-          <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-pink-500 mb-4">
-            <img
-              src="https://media-blr1-1.cdn.whatsapp.net/v/t61.24694-24/491866700_1114268440740721_4875775447951938251_n.jpg?ccb=11-4&oh=01_Q5Aa1QHCLCeDypjhHJaekKx70TID3_Icf1tUIB0VraWsOI6JSw&oe=681B59DA&_nc_sid=5e03e0&_nc_cat=110" // <-- Replace this with your image path
-              alt="Deekshita"
-              className="object-cover w-full h-full"
-            />
-          </div>
 
-          {/* Name */}
-          <h2 className="text-white text-2xl font-bold">Deekshita</h2>
-
-          {/* Role */}
-          <p className="text-pink-400 text-lg font-semibold mb-4">Convenor</p>
-
-          {/* Description */}
-          <p className="text-gray-300 text-sm">
-            Event coordination expert managing complex logistics and team
-            communications.
-          </p>
-        </div>
         {/* <div className="w-[460px] h-[350px]  bg-[#1E1E2D] rounded-xl p-6  flex flex-col items-center text-center shadow-lg">
          
           <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-pink-500 mb-4">
@@ -176,52 +134,6 @@ const Team = () => {
             communications.
           </p>
         </div> */}
-        <div className="w-[460px] h-[350px]  bg-[#1E1E2D] rounded-xl p-6  flex flex-col items-center text-center shadow-lg">
-          {/* Profile Image */}
-          <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-pink-500 mb-4">
-            <img
-              src="https://media-blr1-1.cdn.whatsapp.net/v/t61.24694-24/491866700_1114268440740721_4875775447951938251_n.jpg?ccb=11-4&oh=01_Q5Aa1QHCLCeDypjhHJaekKx70TID3_Icf1tUIB0VraWsOI6JSw&oe=681B59DA&_nc_sid=5e03e0&_nc_cat=110" // <-- Replace this with your image path
-              alt="Deekshita"
-              className="object-cover w-full h-full"
-            />
-          </div>
-
-          {/* Name */}
-          <h2 className="text-white text-2xl font-bold">Deekshita</h2>
-
-          {/* Role */}
-          <p className="text-pink-400 text-lg font-semibold mb-4">
-            Sr Coordinator
-          </p>
-
-          {/* Description */}
-          <p className="text-gray-300 text-sm">
-            Event coordination expert managing complex logistics and team
-            communications.
-          </p>
-        </div>
-        <div className="w-[460px] h-[350px]  bg-[#1E1E2D] rounded-xl p-6  flex flex-col items-center text-center shadow-lg">
-          {/* Profile Image */}
-          <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-pink-500 mb-4">
-            <img
-              src="https://media-blr1-1.cdn.whatsapp.net/v/t61.24694-24/491866700_1114268440740721_4875775447951938251_n.jpg?ccb=11-4&oh=01_Q5Aa1QHCLCeDypjhHJaekKx70TID3_Icf1tUIB0VraWsOI6JSw&oe=681B59DA&_nc_sid=5e03e0&_nc_cat=110" // <-- Replace this with your image path
-              alt="Deekshita"
-              className="object-cover w-full h-full"
-            />
-          </div>
-
-          {/* Name */}
-          <h2 className="text-white text-2xl font-bold">Deekshita</h2>
-
-          {/* Role */}
-          <p className="text-pink-400 text-lg font-semibold mb-4">Convenor</p>
-
-          {/* Description */}
-          <p className="text-gray-300 text-sm">
-            Event coordination expert managing complex logistics and team
-            communications.
-          </p>
-        </div>
       </div>
     </>
   );
