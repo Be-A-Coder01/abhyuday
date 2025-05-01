@@ -51,32 +51,44 @@ const Landing = () => {
         {/* Overlay and Text */}
         <div className="overlay"></div>
         <div className="text-container">
-          <h1 className="text-lg w-[90vw]">Master Of Computer Application</h1>
-          <h2>Ramaiah Institute of Technology</h2>
+          <h1 className="text-[20px] font-black w-screem  md:text-[40px] md:w-screen lg:border-none lg:text-[70px] lg:w-[90vw]">
+            Master Of Computer Application
+          </h1>
+          <h2 className="md:text-[25px] lg:text-[50px]">
+            Ramaiah Institute of Technology
+          </h2>
 
           {/* Countdown Timer */}
-          <div className="countdown-timer">
-            <div className="timer-box">
-              <p>{String(days).padStart(2, "0")}</p>
-              <span>Days</span>
+          <div className="countdown-timer gap-5 md:gap-10   ">
+            <div className="timer-box h-[10px] w-[70px] rounded-md md:rounded-3xl  md:h-[30px] md:w-[30px] lg:w-[100px] lg:h-[120px]">
+              <p className="  text-[12px] md:text-[24px] lg:text-[48px]">
+                {String(days).padStart(2, "0")}
+              </p>
+              <span className="text-[10px] lg:text-[16px]">Days</span>
             </div>
-            <div className="timer-box">
-              <p>{String(hours).padStart(2, "0")}</p>
-              <span>Hours</span>
+            <div className="timer-box h-[30px] w-[70px] border-2 border-red-800 rounded-md md:rounded-2xl md:h-[30px] md:w-[30px] lg:w-[100px] lg:h-[120px]">
+              <p className="text-[12px] md:text-[24px] lg:text-[48px]">
+                {String(hours).padStart(2, "0")}
+              </p>
+              <span className="text-[10px] lg:text-[16px]">Hours</span>
             </div>
-            <div className="timer-box">
-              <p>{String(minutes).padStart(2, "0")}</p>
-              <span>Minutes</span>
+            <div className="timer-box h-[30px] w-[70px] md:h-[30px] md:w-[30px] rounded-md md:rounded-2xl lg:w-[100px] lg:h-[120px]">
+              <p className=" text-[12px] md:text-[24px] lg:text-[48px]">
+                {String(minutes).padStart(2, "0")}
+              </p>
+              <span className="text-[10px] lg:text-[16px]">Minutes</span>
             </div>
-            <div className="timer-box">
-              <p>{String(seconds).padStart(2, "0")}</p>
-              <span>Seconds</span>
+            <div className="timer-box sm:filt h-[30px] w-[70px] md:h-[30px] md:w-[30px] rounded-md md:rounded-2xl lg:w-[100px] lg:h-[120px]">
+              <p className="text-[12px] md:text-[24px] lg:text-[48px]">
+                {String(seconds).padStart(2, "0")}
+              </p>
+              <span className="text-[10px] lg:text-[16px]">Seconds</span>
             </div>
           </div>
         </div>
 
         {/* Floating spaceship */}
-        <div className="floating-element">
+        <div className="floating-element absolute bottom-16 md:bottom-52 lg:max-h-[150px] lg:bottom-16">
           <img src={spaceship} alt="Spaceship" />
         </div>
       </div>

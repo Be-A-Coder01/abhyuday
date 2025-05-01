@@ -171,13 +171,13 @@ video {
 }
 
 .text-container h1 {
-  font-size: 4rem;
+  /* font-size: 4rem; */
   font-weight: bold;
   animation: fadeIn 3s ease-in-out;
 }
 
 .text-container h2 {
-  font-size: 2.5rem;
+  /* font-size: 2.5rem; */
   font-weight: 600;
   animation: fadeIn 3s ease-in-out 0.5s;
 }
@@ -194,19 +194,19 @@ video {
   }
 }
 
-.floating-element {
+/* .floating-element {
   position: absolute;
   bottom: 0;
   right: 20%;
   animation: float 4s infinite ease-in-out;
-}
+} */
 
-.floating-element img {
+/* .floating-element img {
   max-height: 200px;
   transform: rotate(15deg);
-}
+} */
 
-@keyframes float {
+/* @keyframes float {
   0% {
     transform: translateY(0) rotate(15deg);
   }
@@ -218,7 +218,7 @@ video {
   100% {
     transform: translateY(0) rotate(15deg);
   }
-}
+} */
 
 
 
@@ -258,26 +258,24 @@ video {
   /* Or space background */
 }
 
-.spaceship {
+/* .spaceship {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   right: -200px;
-  /* Start off-screen */
   width: 150px;
   animation: fly-across 5s ease-in-out forwards;
-}
+} */
 
 
-#spaceShip {
+/* #spaceShip {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   right: -200px;
-  /* Start off-screen */
   width: 600px;
   animation: fly-across 3s ease-in-out forwards;
-}
+} */
 
 @keyframes fly-across {
   0% {
@@ -373,52 +371,21 @@ video {
 } */
 
 /* Countdown timer container */
-.countdown-timer {
+/* .countdown-timer {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 20px;
   gap: 20px;
-}
+} */
 
 /* Style for each individual timer box */
-.timer-box {
-  background: linear-gradient(135deg, #2d006a, #3f4a82, #603c8b);
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 100px;
-  height: 120px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-}
 
-.timer-box p {
-  font-size: 3rem;
-  font-weight: bold;
-  margin: 0;
-  animation: fadeIn 1s ease-out;
-}
 
-.timer-box span {
-  font-size: 1rem;
-  text-transform: uppercase;
-  font-weight: 600;
-  margin-top: 5px;
-  font-family: 'Poppins', sans-serif;
-  letter-spacing: 2px;
-}
+
 
 /* Hover effect */
-.timer-box:hover {
-  transform: scale(1.1);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.9);
-}
+
 
 /* Keyframes for fade-in effect */
 @keyframes fadeIn {
@@ -435,14 +402,14 @@ video {
 
 /* Floating spaceship animation */
 .floating-element {
-  position: absolute;
-  bottom: 0;
+  /* position: absolute; */
+  /* bottom: 0; */
   right: 20%;
   animation: float 4s infinite ease-in-out;
 }
 
 .floating-element img {
-  max-height: 150px;
+  max-height: 250px;
   transform: rotate(15deg);
 }
 
@@ -466,7 +433,7 @@ video {
   justify-content: center;
   align-items: center;
   margin-top: 20px;
-  gap: 20px;
+  /* gap: 20px; */
 }
 
 /* Style for each individual timer box with transparent background and blur effect */
@@ -474,19 +441,20 @@ video {
   background: transparent;
   /* Set background to transparent */
   padding: 20px;
-  border-radius: 15px;
+  /* border-radius: 16px; */
   border: 2px solid transparent;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 100px;
-  height: 120px;
+  /* width: 100px;
+  height: 120px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: white;
   position: relative;
+  /* border: 2px solid red; */
   backdrop-filter: blur(10px);
   /* Apply blur effect */
   -webkit-backdrop-filter: blur(10px);
@@ -509,15 +477,16 @@ video {
 
 /* Timer number styling */
 .timer-box p {
-  font-size: 3rem;
+  /* font-size: 3rem; */
   font-weight: bold;
   margin: 0;
   animation: fadeIn 1s ease-out;
+
 }
 
 /* Timer label styling */
 .timer-box span {
-  font-size: 1rem;
+  /* font-size: 1rem; */
   text-transform: uppercase;
   font-weight: 600;
   margin-top: 5px;
