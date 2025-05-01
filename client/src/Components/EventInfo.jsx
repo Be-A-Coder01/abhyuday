@@ -299,7 +299,7 @@ const EventInfo = () => {
         <Navbar></Navbar>
       </div>
       {currentEvent && (
-        <div className="mt-20 flex md:justify-center-safe lg:py-6">
+        <div className="mt-[140px] md:mt-20 flex md:justify-center-safe lg:py-6">
           <div className=" mx-5 w-[95vw]  md:w-[90vw] rounded-xl bg-[#0F1016]  flex flex-col gap-24">
             <div>
               <p className="title text-[25px] my-3 md:text-[50px] lg:text-[40px] md:font-bold text-center md:my-5 lg:my-5">
