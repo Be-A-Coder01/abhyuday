@@ -299,50 +299,58 @@ const EventInfo = () => {
         <Navbar></Navbar>
       </div>
       {currentEvent && (
-        <div className="mt-20 flex justify-center-safe py-6">
-          <div className="  w-[90vw] rounded-xl bg-[#0F1016]  flex flex-col gap-24">
+        <div className="mt-20 flex md:justify-center-safe lg:py-6">
+          <div className=" mx-5 w-[95vw]  md:w-[90vw] rounded-xl bg-[#0F1016]  flex flex-col gap-24">
             <div>
-              <p className="title text-[40px] font-bold text-center my-5">
+              <p className="title text-[25px] my-3 md:text-[50px] lg:text-[40px] md:font-bold text-center md:my-5 lg:my-5">
                 {eventFlow[currentEvent]?.title}
               </p>
               <div className="flex  gap-10 justify-center">
-                <div className=" flex gap-4">
-                  <i class="fa-regular fa-clock text-[#C3CFD1] text-lg font-thin my-1"></i>
-                  <p className="text-[#C3CFD1] text-lg">16 MAY 2025</p>
+                <div className=" justify-center  place-items-center p-auto flex gap-2 md:gap-4">
+                  <i class="fa-regular fa-clock text-[#C3CFD1] text-xs md:text-lg font-thin my-1"></i>
+                  <p className="text-[#C3CFD1] text-[10px] md:text-xl lg:text-lg">
+                    16 MAY 2025
+                  </p>
                 </div>
 
-                <div className=" flex gap-4">
-                  <i class="fa-solid fa-location-dot text-[#C3CFD1] text-lg my-1"></i>
-                  <p className=" text-[#C3CFD1] text-lg">
+                <div className=" flex  place-items-center justify-center p-auto gap-2 md:gap-4">
+                  <i class="fa-solid fa-location-dot text-[#C3CFD1] text-xs md:text-lg my-1"></i>
+                  <p className=" text-[#C3CFD1] text-[10px] md:text-xl lg:text-lg">
                     {eventFlow[currentEvent]?.location}
                   </p>
                 </div>
-                <div className=" flex gap-4  justify-center p-auto">
-                  <i class="fa-solid fa-user-group text-[#C3CFD1] text-lg my-1"></i>
-                  <p className="text-[#C3CFD1] text-lg">
+                <div className=" flex place-items-center gap-2 md:gap-4  justify-center p-auto">
+                  <i class="fa-solid fa-user-group text-[#C3CFD1] text-xs md:text-lg my-1"></i>
+                  <p className="text-[#C3CFD1] text-[10px] md:text-xl lg:text-lg">
                     {eventFlow[currentEvent]?.count} MEMBERS
                   </p>
                 </div>
               </div>
             </div>
-            <div className=" relative flex">
+            <div className=" relative flex  flex-col lg:flex-row">
+              <div>
+                <img
+                  src={characterImages[eventFlow[currentEvent]?.charcater]}
+                  className=" h-[30vh] ml-[60px] md:ml-[200px] mb-10 lg:ml-[850px] lg:absolute md:h-[40vh] lg:h-[90vh]"
+                  alt={eventFlow[currentEvent]?.charcater}
+                />
+              </div>
               <div>
                 {/* <img src={charcater} alt="" /> */}
                 <Link to="/event-registration">
-                  <button className="registerButton rounded-md font-bold text-white  ml-16 mb-10 w-2/12 py-3">
+                  <button className="registerButton w-4/12 text-lg py-2 ml-5 mb-10 md:text-xl rounded-md font-bold text-white md:ml-14 md:mb-10 md:py-3 md:w-3/12  lg:ml-16 lg:mb-10 lg:w-2/12 lg:py-3">
                     Register
                   </button>
                 </Link>
-                <ol class="relative border-s border-gray-200  dark:border-gray-700 ml-14">
+                <ol class="relative border-s border-gray-200  dark:border-gray-700 ml-4 md:ml-16 lg:ml-14">
                   <li class="mb-10 ms-4 ">
                     <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                    <p className="text-white text-3xl ml-1 font-bold mb-4">
+                    <p className="text-white text-2xl mb-5 md:text-4xl md:ml-1 md:mb-5 lg:text-3xl lg:ml-1 font-bold lg:mb-4">
                       Event Overview
                     </p>
                     <time class=" text-gray-400 dark:text-gray-500 ">
-                      <div className="details  ml-9 bg-[#1E1E2D] w-2/4  rounded-lg">
+                      <div className="details  ml-2 w-[75vw] md:w-3/4 bg-[#1E1E2D] lg:w-2/4  rounded-lg">
                         <p className="text-[#D2D2D5]">
-                          {" "}
                           {eventFlow[currentEvent]?.overview}
                         </p>
                       </div>
@@ -350,11 +358,11 @@ const EventInfo = () => {
                   </li>
                   <li class="mb-10 ms-4">
                     <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                    <p className="text-white text-3xl ml-1 font-bold mb-4">
+                    <p className="text-white text-2xl mb-5  md:text-4xl md:ml-1 md:mb-5 lg:text-3xl lg:ml-1 font-bold lg:mb-4">
                       Event Details
                     </p>
                     <time class=" text-gray-400 dark:text-gray-500 ">
-                      <div className="details  ml-9 bg-[#1E1E2D] w-2/4  rounded-lg">
+                      <div className="details ml-2  w-[75vw] md:ml-9 md:w-3/4 lg:ml-9 bg-[#1E1E2D] lg:w-2/4  rounded-lg">
                         <p className="text-[#D2D2D5]">
                           Test your knowledge of Cosmo, the telepathic Soviet
                           space dog and Knowhere's security chief, from Marvel's
@@ -362,7 +370,7 @@ const EventInfo = () => {
                         </p>
                         <div className="flex flex-col  mt-4 ">
                           <div className="">
-                            <p className="sub-head font-bold text-xl mt-5">
+                            <p className="sub-head font-bold text-xl d:text-2xl lg:text-xl mt-5">
                               Timing
                             </p>
                             <p className="font-normal">
@@ -370,7 +378,7 @@ const EventInfo = () => {
                             </p>
                           </div>
                           <div className="">
-                            <p className="sub-head font-bold text-xl mt-5">
+                            <p className="sub-head font-bold text-xl md:text-2xl lg:text-xl  mt-5">
                               Prizes
                             </p>
                             <div className=" flex gap-16 mt-2 ml-3">
@@ -388,11 +396,11 @@ const EventInfo = () => {
                   </li>
                   <li class="mb-10 ms-4 ">
                     <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                    <p className="text-white text-3xl ml-1 font-bold mb-4">
+                    <p className="text-white text-2xl mb-5  md:text-4xl md:ml-1 md:mb-5 lg:text-3xl lg:ml-1 font-bold lg:mb-4">
                       Rules & Regulations
                     </p>
                     <time class="   text-gray-400 dark:text-gray-500 ">
-                      <div className="details  ml-9 bg-[#1E1E2D] w-[80vw] flex gap-20  rounded-lg">
+                      <div className="details ml-2  w-[75vw]  bg-[#1E1E2D] md:w-[70vw] lg:w-[80vw] flex flex-col lg:flex-row gap-4 md:gap-3 lg:gap-20  rounded-lg">
                         <div className="flex flex-col gap-4 text-[#D2D2D5]">
                           <li className="list-disc">
                             {eventFlow[currentEvent]?.rule1}
@@ -414,27 +422,27 @@ const EventInfo = () => {
                   </li>
                   <li class="mb-10 ms-4">
                     <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                    <p className="text-white text-3xl ml-1 font-bold mb-4">
+                    <p className="text-white text-2xl mb-5  md:text-4xl md:ml-1 md:mb-5 lg:text-3xl lg:ml-1 font-bold lg:mb-4">
                       Event Coordinators
                     </p>
                     <time class="   text-gray-400 dark:text-gray-500 ">
-                      <div className="details  ml-9 bg-[#1E1E2D] w-[80vw] flex gap-10 h-[22vh] place-items-center  rounded-lg">
-                        <div className="bg-[#231E49]  flex flex-col p-5 rounded-xl w-1/3 ">
-                          <span className="sub-head text-xl font-bold">
+                      <div className="details  ml-2  w-[75vw] bg-[#1E1E2D] md:w-[70vw] lg:w-[80vw] flex flex-col md:flex-row gap-10  md:h-[22vh] place-items-center  rounded-lg">
+                        <div className="bg-[#231E49]  flex flex-col p-4 md:p-5 rounded-md md:rounded-xl  w-[60vw] md:w-1/3 ">
+                          <span className="sub-head text-md md:text-xl font-bold">
                             {eventFlow[currentEvent]?.coordinators.first.name}
                           </span>
-                          <span className="text-[#D2D2D5] text-sm  font-semibold">
+                          <span className="text-[#D2D2D5] text-xs md:text-sm  font-semibold">
                             {
                               eventFlow[currentEvent]?.coordinators.first
                                 .contact
                             }
                           </span>
                         </div>
-                        <div className="bg-[#231E49]  flex flex-col p-5 rounded-xl w-1/3 ">
-                          <span className="text-xl font-bold sub-head">
+                        <div className="bg-[#231E49]  flex flex-col p-3 md:p-5 rounded-md md:rounded-xl w-[60vw] md:w-1/3 ">
+                          <span className="text-md md:text-xl font-bold sub-head">
                             {eventFlow[currentEvent]?.coordinators.second.name}
                           </span>
-                          <span className="text-[#D2D2D5] text-sm  font-semibold">
+                          <span className="text-[#D2D2D5]text-xs md:text-sm  font-semibold">
                             {
                               eventFlow[currentEvent]?.coordinators.second
                                 .contact
@@ -445,13 +453,6 @@ const EventInfo = () => {
                     </time>
                   </li>
                 </ol>
-              </div>
-              <div>
-                <img
-                  src={characterImages[eventFlow[currentEvent]?.charcater]}
-                  className="-ml-[450px] absolute h-[90vh]"
-                  alt={eventFlow[currentEvent]?.charcater}
-                />
               </div>
             </div>
           </div>
