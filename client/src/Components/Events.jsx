@@ -64,7 +64,7 @@ const Events = () => {
               >
                 Cosmo’s Space Trivia
               </p>
-              <p className=" text-[#D2D2CA] text-lg  md:text-sm">16 May 2026</p>
+              <p className=" text-[#D2D2CA] text-lg  md:text-sm">16 May 2025</p>
               <p className="line-clamp-2 text-lg  md:text-sm text-[#D2D2D5] font-semibold">
                 Experience ipsum dolor sit amet consectetur adipisicing elit.
                 Sapiente vel doloremque omnis
@@ -91,7 +91,7 @@ const Events = () => {
                 Nebula’s Cyber Takeover
               </p>
               <p className=" text-[#D2D2CA]  text-lg  md:text-sm">
-                16 May 2026
+                16 May 2025
               </p>
               <p className="line-clamp-2 text-lg  md:text-sm text-[#D2D2D5] font-semibold">
                 Experience ipsum dolor sit amet consectetur adipisicing elit.
@@ -118,7 +118,7 @@ const Events = () => {
               >
                 Gamora’s UI Forge
               </p>
-              <p className=" text-[#D2D2CA] text-lg  md:text-sm">16 May 2026</p>
+              <p className=" text-[#D2D2CA] text-lg  md:text-sm">16 May 2025</p>
               <p className="line-clamp-2 text-lg  md:text-sm text-[#D2D2D5] font-semibold">
                 Experience ipsum dolor sit amet consectetur adipisicing elit.
                 Sapiente vel doloremque omnis
@@ -144,7 +144,7 @@ const Events = () => {
               >
                 Rocket’s Relic Raid
               </p>
-              <p className=" text-[#D2D2CA] text-lg  md:text-sm">16 May 2026</p>
+              <p className=" text-[#D2D2CA] text-lg  md:text-sm">16 May 2025</p>
               <p className="line-clamp-2 text-lg  md:text-sm text-[#D2D2D5] font-semibold">
                 Experience ipsum dolor sit amet consectetur adipisicing elit.
                 Sapiente vel doloremque omnis
@@ -170,7 +170,7 @@ const Events = () => {
               >
                 Groot’s Game Grid
               </p>
-              <p className=" text-[#D2D2CA] text-lg  md:text-sm">16 May 2026</p>
+              <p className=" text-[#D2D2CA] text-lg  md:text-sm">16 May 2025</p>
               <p className="line-clamp-2 text-lg  md:text-sm text-[#D2D2D5] font-semibold">
                 Experience ipsum dolor sit amet consectetur adipisicing elit.
                 Sapiente vel doloremque omnis
@@ -196,7 +196,7 @@ const Events = () => {
               >
                 Drax’s Power Pitch
               </p>
-              <p className=" text-[#D2D2CA] text-lg  md:text-sm">16 May 2026</p>
+              <p className=" text-[#D2D2CA] text-lg  md:text-sm">16 May 2025</p>
               <p className="line-clamp-2 text-lg  md:text-sm text-[#D2D2D5] font-semibold">
                 Experience ipsum dolor sit amet consectetur adipisicing elit.
                 Sapiente vel doloremque omnis
@@ -222,7 +222,7 @@ const Events = () => {
               >
                 Star-Lord’s IT Command
               </p>
-              <p className=" text-[#D2D2CA] text-lg  md:text-sm">16 May 2026</p>
+              <p className=" text-[#D2D2CA] text-lg  md:text-sm">16 May 2025</p>
               <p className="line-clamp-2 text-lg  md:text-sm text-[#D2D2D5] font-semibold">
                 Experience ipsum dolor sit amet consectetur adipisicing elit.
                 Sapiente vel doloremque omnis
@@ -248,7 +248,7 @@ const Events = () => {
               >
                 8. Hulk’s Smash Clicks
               </p>
-              <p className=" text-[#D2D2CA] text-lg  md:text-sm">16 May 2026</p>
+              <p className=" text-[#D2D2CA] text-lg  md:text-sm">16 May 2025</p>
               <p className="line-clamp-2 text-lg  md:text-sm text-[#D2D2D5] font-semibold">
                 Experience ipsum dolor sit amet consectetur adipisicing elit.
                 Sapiente vel doloremque omnis
