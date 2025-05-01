@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import rit from "../assets/rit.png";
+import logo from "../assets/brandLogo.png";
 
 const Navbar = () => {
   return (
     <div className=" z-20 bg-opacity-30 backdrop-blur-lg backdrop-filter fixed gap-y-3.5 top-0 flex flex-col md:flex-row right-0 left-0 justify-between py-3 md:py-5 text-center text-white bg-transparent place-items-center">
       <div>
         <p className="text-[10px] ml-5 md:h-[20px] md:font-bold md:ml-11 ">
-          <img src={rit} className="  h-[30px] md:h-[45px]" />
+          <img src={logo} className="  h-[30px] md:h-[45px]" />
         </p>
       </div>
       <div>
@@ -16,7 +16,7 @@ const Navbar = () => {
           <li>About</li>
           <Link to="/events">Events</Link>
           <Link to="/members">Team</Link>
-          <li>Contact</li>
+          <li>Broucher</li>
         </ul>
       </div>
     </div>

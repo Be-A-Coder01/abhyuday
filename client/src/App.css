@@ -3,6 +3,10 @@
   color: white;
 }
 
+.text-shadow-custom {
+  text-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
+}
+
 /* Add this to your CSS (App.css or another file) */
 
 /* Parallax Effect */

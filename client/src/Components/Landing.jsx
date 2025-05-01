@@ -51,10 +51,12 @@ const Landing = () => {
         {/* Overlay and Text */}
         <div className="overlay"></div>
         <div className="text-container">
-          <h1 className="text-[20px] font-black w-screem  md:text-[40px] md:w-screen lg:border-none lg:text-[70px] lg:w-[90vw]">
+          <h1 className="text-[13px] font-black w-screem  md:text-[40px] md:w-screen lg:border-none lg:text-[70px] lg:w-[90vw]">
             Master Of Computer Applications
           </h1>
-          <h2 className="md:text-[25px] lg:text-[50px]">Abhyuday vol 9.0</h2>
+          <h2 className="text-[30px] md:text-[25px] font-bold lg:text-[50px] text-shadow-custom">
+            Abhyuday Vol 9.0
+          </h2>
 
           {/* Countdown Timer */}
           <div className="countdown-timer gap-5 md:gap-10   ">
