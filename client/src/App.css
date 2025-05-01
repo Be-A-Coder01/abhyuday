@@ -131,7 +131,7 @@ video {
 
 #landing::before {
   content: "";
-  background-image: url("./assets/landing1.jpg");
+  background-image: url("./assets/bg.jpg");
   height: 100%;
   width: 100%;
   position: absolute;
