@@ -305,8 +305,8 @@ const EventInfo = () => {
               <p className="title text-[25px] my-3 md:text-[50px] lg:text-[40px] md:font-bold text-center md:my-5 lg:my-5">
                 {eventFlow[currentEvent]?.title}
               </p>
-              <div className="flex  gap-10 justify-center">
-                <div className=" justify-center  place-items-center p-auto flex gap-2 md:gap-4">
+              <div className="flex gap-5 md:gap-10 justify-center">
+                <div className=" justify-center  place-items-center p-auto flex gap-[3px]  md:gap-4">
                   <i class="fa-regular fa-clock text-[#C3CFD1] text-xs md:text-lg font-thin my-1"></i>
                   <p className="text-[#C3CFD1] text-[10px] md:text-xl lg:text-lg">
                     16 MAY 2025
