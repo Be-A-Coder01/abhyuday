@@ -14,6 +14,7 @@ import sriram from "../assets/sriram.jpeg";
 import prithvi from "../assets/prithvi.jpeg";
 import aditya from "../assets/aditya.jpg";
 import blen from "../assets/blen.jpeg";
+import darshan from "../assets/darshan.jpeg";
 
 const Team = () => {
   return (
@@ -134,7 +135,7 @@ const Team = () => {
           {/* Profile Image */}
           <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-pink-500 mb-4">
             <img
-              src="https://media-blr1-2.cdn.whatsapp.net/v/t61.24694-24/491873504_1770633523501491_8356581768967755685_n.jpg?ccb=11-4&oh=01_Q5Aa1QFPPpsvDm9oI9djnXsaAEESkvBgN7mo65cmh4Ns_gNeTQ&oe=681C9775&_nc_sid=5e03e0&_nc_cat=101" // <-- Replace this with your image path
+              src={darshan} // <-- Replace this with your image path
               alt="darshan"
               className="object-cover w-full h-full"
             />
