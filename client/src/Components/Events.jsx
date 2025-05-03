@@ -54,15 +54,15 @@ const Events = () => {
               src={itQuizBanner}
               className="rounded-t-md md:h-32 lg:h-48 w-full"
             />
-            <div className="flex flex-col p-4 gap-2 md:gap-2 md:p-4 lg:gap-2 lg:p-4">
-              <p className="text-2xl md:text-xl lg:text-2xl font-bold text-white">
-                IT QUIZ
-              </p>
+            <div className="flex flex-col p-4 gap-1 md:gap-2 md:p-4 lg:gap-2 lg:p-4">
               <p
                 id="eventName"
-                className="text-lg md:text-xs lg:text-sm  text-white"
+                className="text-xl font-bold md:text-xl lg:text-xl  text-white"
               >
                 Cosmo’s Space Trivia
+              </p>
+              <p className="text-md md:text-xs lg:text-lg  text-white">
+                IT QUIZ
               </p>
               <p className=" text-[#D2D2CA] text-lg  md:text-sm">16 May 2025</p>
               <p className="line-clamp-2 text-lg  md:text-sm text-[#D2D2D5] font-semibold">
@@ -81,14 +81,14 @@ const Events = () => {
               className="rounded-t-md md:h-32 lg:h-48 w-full"
             />
             <div className="flex flex-col p-4 gap-2 md:gap-2 md:p-4 lg:gap-2 lg:p-4">
-              <p className="text-2xl md:text-xl lg:text-2xl font-bold text-white">
-                Coding
-              </p>
               <p
                 id="eventName"
-                className=" text-lg md:text-xs lg:text-sm  text-white"
+                className="text-lg font-bold md:text-xl lg:text-lg  text-white"
               >
                 Nebula’s Cyber Takeover
+              </p>
+              <p className="text-md md:text-xs lg:text-lg  text-white">
+                Coding
               </p>
               <p className=" text-[#D2D2CA]  text-lg  md:text-sm">
                 16 May 2025
@@ -109,14 +109,14 @@ const Events = () => {
               className="rounded-t-md  md:h-32 lg:h-48 w-full"
             />
             <div className="flex flex-col p-4 gap-2 md:gap-2 md:p-4 lg:gap-2 lg:p-4">
-              <p className="text-2xl md:text-xl lg:text-2xl font-bold text-white">
-                UI/UX - Design
-              </p>
               <p
                 id="eventName"
-                className="text-lg md:text-xs lg:text-sm  text-white"
+                className="text-xl font-bold md:text-xl lg:text-xl  text-white"
               >
                 Gamora’s UI Forge
+              </p>
+              <p className="text-md md:text-xs lg:text-lg  text-white">
+                UI/UX - Design
               </p>
               <p className=" text-[#D2D2CA] text-lg  md:text-sm">16 May 2025</p>
               <p className="line-clamp-2 text-lg  md:text-sm text-[#D2D2D5] font-semibold">
@@ -135,14 +135,14 @@ const Events = () => {
               className="rounded-t-md md:h-32 lg:h-48 w-full"
             />
             <div className="flex flex-col p-4 gap-2 md:gap-2 md:p-4 lg:gap-2 lg:p-4">
-              <p className="text-2xl md:text-xl lg:text-2xl font-bold text-white">
-                Treasure Hunt
-              </p>
               <p
                 id="eventName"
-                className="text-lg md:text-xs lg:text-sm  text-white"
+                className="text-xl font-bold md:text-xl lg:text-xl  text-white"
               >
                 Rocket’s Relic Raid
+              </p>
+              <p className="text-md md:text-xs lg:text-lg  text-white">
+                Treasure Hunt
               </p>
               <p className=" text-[#D2D2CA] text-lg  md:text-sm">16 May 2025</p>
               <p className="line-clamp-2 text-lg  md:text-sm text-[#D2D2D5] font-semibold">
@@ -161,14 +161,14 @@ const Events = () => {
               className="rounded-t-md md:h-32 lg:h-48 w-full"
             />
             <div className="flex flex-col p-4 gap-2 md:gap-2 md:p-4 lg:gap-2 lg:p-4">
-              <p className="text-2xl md:text-xl lg:text-2xl font-bold text-white">
-                Gaming
-              </p>
               <p
                 id="eventName"
-                className="text-lg md:text-xs lg:text-sm  text-white"
+                className="text-xl font-bold md:text-xl lg:text-xl  text-white"
               >
                 Groot’s Game Grid
+              </p>
+              <p className="text-md md:text-xs lg:text-lg  text-white">
+                Gaming
               </p>
               <p className=" text-[#D2D2CA] text-lg  md:text-sm">16 May 2025</p>
               <p className="line-clamp-2 text-lg  md:text-sm text-[#D2D2D5] font-semibold">
@@ -187,14 +187,14 @@ const Events = () => {
               className=" rounded-t-md md:h-32 lg:h-48 w-full"
             />
             <div className="flex flex-col p-4 gap-2 md:gap-2 md:p-4 lg:gap-2 lg:p-4">
-              <p className="text-2xl md:text-xl lg:text-2xl font-bold text-white">
-                Ideathon
-              </p>
               <p
                 id="eventName"
-                className="text-lg md:text-xs lg:text-sm  text-white"
+                className="text-xl font-bold md:text-xl lg:text-xl  text-white"
               >
                 Drax’s Power Pitch
+              </p>
+              <p className="text-md md:text-xs lg:text-lg  text-white">
+                Ideathon
               </p>
               <p className=" text-[#D2D2CA] text-lg  md:text-sm">16 May 2025</p>
               <p className="line-clamp-2 text-lg  md:text-sm text-[#D2D2D5] font-semibold">
@@ -213,14 +213,14 @@ const Events = () => {
               className="rounded-t-md md:h-32 lg:h-48 w-full"
             />
             <div className="flex flex-col p-4 gap-2 md:gap-2 md:p-4 lg:gap-2 lg:p-4">
-              <p className="text-2xl md:text-xl lg:text-2xl font-bold text-white">
-                IT Manager
-              </p>
               <p
                 id="eventName"
-                className="text-lg md:text-xs lg:text-sm  text-white"
+                className="text-xl font-bold md:text-xl lg:text-xl  text-white"
               >
                 Star-Lord’s IT Command
+              </p>
+              <p className="text-md md:text-xs lg:text-lg  text-white">
+                IT Manager
               </p>
               <p className=" text-[#D2D2CA] text-lg  md:text-sm">16 May 2025</p>
               <p className="line-clamp-2 text-lg  md:text-sm text-[#D2D2D5] font-semibold">
@@ -239,14 +239,14 @@ const Events = () => {
               className="rounded-t-md md:h-32 lg:h-48 w-full"
             />
             <div className="flex flex-col p-4 gap-2 md:gap-2 md:p-4 lg:gap-2 lg:p-4">
-              <p className="text-2xl md:text-xl lg:text-2xl font-bold text-white">
-                Photography
-              </p>
               <p
                 id="eventName"
-                className="text-lg md:text-xs lg:text-sm  text-white"
+                className="text-xl font-bold md:text-xl lg:text-xl  text-white"
               >
-                8. Hulk’s Smash Clicks
+                Hulk’s Smash Clicks
+              </p>
+              <p className="text-md md:text-xs lg:text-lg  text-white">
+                Photography
               </p>
               <p className=" text-[#D2D2CA] text-lg  md:text-sm">16 May 2025</p>
               <p className="line-clamp-2 text-lg  md:text-sm text-[#D2D2D5] font-semibold">
