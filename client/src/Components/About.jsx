@@ -10,12 +10,14 @@ import "../JavaScript/loader.js";
 const About = () => {
   return (
     <>
+      <Navbar></Navbar>
+
       <div className="wrapper  md:mt-0   ">
         <div id="stars" className="-z-10"></div>
         <div id="stars2" className="-z-10"></div>
         <div id="stars3" className="-z-10"></div>
       </div>
-      <Navbar></Navbar>
+
       <div className=" mt-[200px]  md:mt-14  flex justify-center place-items-center h-screen">
         <div className="text-white leading-5 tracking-widest md:text-center bg-[#0F1016] px-5 py-10 md:p-10 rounded-lg text-xs  md:tracking-widest md:text-xl md:leading-10 w-[90vw] ">
           About <span className="text-pink-400 font-bold">Abhyuday 9.0</span> .
