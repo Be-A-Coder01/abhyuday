@@ -32,29 +32,6 @@ const Team = () => {
           {/* Profile Image */}
           <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-pink-500 mb-4">
             <img
-              src={rupesh} // <-- Replace this with your image path
-              alt="Rupesh"
-              className="object-cover w-full h-full"
-            />
-          </div>
-
-          {/* Name */}
-          <h2 className="text-white text-2xl mb-5 font-bold">Rupesh Reddy</h2>
-
-          {/* Role */}
-          <p className="text-pink-400 text-lg font-semibold mb-4">9606027172</p>
-
-          {/* Description */}
-          <p className="text-gray-300 text-sm">
-            Event coordination expert managing complex logistics and team
-            communications.
-          </p>
-        </div>
-
-        <div className="w-[460px] z-10 h-[350px]  bg-[#1E1E2D] rounded-xl p-6  flex flex-col items-center text-center shadow-lg">
-          {/* Profile Image */}
-          <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-pink-500 mb-4">
-            <img
               src={jeevitha} // <-- Replace this with your image path
               alt="Jeevitha"
               className="object-cover w-full h-full"
@@ -62,18 +39,18 @@ const Team = () => {
           </div>
 
           {/* Name */}
-          <h2 className="text-white text-2xl mb-5 font-bold">Jeevitha</h2>
+          <div className="flex flex-col gap-4">
+            <h2 className="text-white text-2xl  font-bold">Jeevitha P</h2>
+            <p className=" text-white tag text-md rounded-md py-1 px-2 font-semibold bg-gradient-to-r from-pink-500/30 to-purple-500/30">
+              Student Coordinator
+            </p>
 
-          {/* Role */}
-          <p className="text-pink-400 text-lg font-semibold mb-4">
-            63662 69221
-          </p>
+            {/* Name */}
 
+            {/* Role */}
+            <p className="text-pink-400 text-lg font-semibold ">6366269221</p>
+          </div>
           {/* Description */}
-          <p className="text-gray-300 text-sm">
-            Event coordination expert managing complex logistics and team
-            communications.
-          </p>
         </div>
 
         <div className="w-[460px] z-10 h-[350px]  bg-[#1E1E2D] rounded-xl p-6  flex flex-col items-center text-center shadow-lg">
@@ -87,43 +64,19 @@ const Team = () => {
           </div>
 
           {/* Name */}
-          <h2 className="text-white text-2xl mb-5 font-bold">Sriram</h2>
+          <div className="flex flex-col gap-4">
+            <h2 className="text-white text-2xl  font-bold">Shri Ram</h2>
+            <p className=" text-white tag text-md rounded-md py-1 px-2 font-semibold bg-gradient-to-r from-pink-500/30 to-purple-500/30">
+              Student Coordinator
+            </p>
 
-          {/* Role */}
-          <p className="text-pink-400 text-lg font-semibold mb-4">
-            87626 77494
-          </p>
+            {/* Name */}
 
-          {/* Description */}
-          <p className="text-gray-300 text-sm">
-            Event coordination expert managing complex logistics and team
-            communications.
-          </p>
-        </div>
-
-        <div className="w-[460px] z-10 h-[350px]  bg-[#1E1E2D] rounded-xl p-6  flex flex-col items-center text-center shadow-lg">
-          {/* Profile Image */}
-          <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-pink-500 mb-4">
-            <img
-              src="https://media-blr1-2.cdn.whatsapp.net/v/t61.24694-24/491873504_1770633523501491_8356581768967755685_n.jpg?ccb=11-4&oh=01_Q5Aa1QFPPpsvDm9oI9djnXsaAEESkvBgN7mo65cmh4Ns_gNeTQ&oe=681C9775&_nc_sid=5e03e0&_nc_cat=101" // <-- Replace this with your image path
-              alt="darshan"
-              className="object-cover w-full h-full"
-            />
+            {/* Role */}
+            <p className="text-pink-400 text-lg font-semibold ">8762677494</p>
           </div>
 
-          {/* Name */}
-          <h2 className="text-white text-2xl mb-5 font-bold">Darshan</h2>
-
-          {/* Role */}
-          <p className="text-pink-400 text-lg font-semibold mb-4">
-            87620 01156
-          </p>
-
           {/* Description */}
-          <p className="text-gray-300 text-sm">
-            Event coordination expert managing complex logistics and team
-            communications.
-          </p>
         </div>
 
         <div className="w-[460px] z-10 h-[350px]  bg-[#1E1E2D] rounded-xl p-6  flex flex-col items-center text-center shadow-lg">
@@ -137,18 +90,19 @@ const Team = () => {
           </div>
 
           {/* Name */}
-          <h2 className="text-white mb-5 text-2xl font-bold">Prathviraj</h2>
+          <div className="flex flex-col gap-4">
+            <h2 className="text-white text-2xl  font-bold">Prathviraj</h2>
+            <p className=" text-white tag text-md rounded-md py-1 px-2 font-semibold bg-gradient-to-r from-pink-500/30 to-purple-500/30">
+              Student Coordinator
+            </p>
 
-          {/* Role */}
-          <p className="text-pink-400 text-lg font-semibold mb-4">
-            78924 51885
-          </p>
+            {/* Name */}
+
+            {/* Role */}
+            <p className="text-pink-400 text-lg font-semibold ">7892451885</p>
+          </div>
 
           {/* Description */}
-          <p className="text-gray-300 text-sm">
-            Event coordination expert managing complex logistics and team
-            communications.
-          </p>
         </div>
 
         <div className="w-[460px] z-10 h-[350px]  bg-[#1E1E2D] rounded-xl p-6  flex flex-col items-center text-center shadow-lg">
@@ -156,24 +110,72 @@ const Team = () => {
           <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-pink-500 mb-4">
             <img
               src={aditya} // <-- Replace this with your image path
+              alt="aditya"
+              className="object-cover w-full h-full"
+            />
+          </div>
+
+          {/* Name */}
+          <div className="flex flex-col gap-4">
+            <h2 className="text-white text-2xl  font-bold">Aditya Shree</h2>
+            <p className=" text-white tag text-md rounded-md py-1 px-2 font-semibold bg-gradient-to-r from-pink-500/30 to-purple-500/30">
+              Student Coordinator
+            </p>
+
+            {/* Name */}
+
+            {/* Role */}
+            <p className="text-pink-400 text-lg font-semibold ">997285328</p>
+          </div>
+        </div>
+
+        <div className="w-[460px] z-10 h-[350px]  bg-[#1E1E2D] rounded-xl p-6  flex flex-col items-center text-center shadow-lg">
+          {/* Profile Image */}
+          <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-pink-500 mb-4">
+            <img
+              src="https://media-blr1-2.cdn.whatsapp.net/v/t61.24694-24/491873504_1770633523501491_8356581768967755685_n.jpg?ccb=11-4&oh=01_Q5Aa1QFPPpsvDm9oI9djnXsaAEESkvBgN7mo65cmh4Ns_gNeTQ&oe=681C9775&_nc_sid=5e03e0&_nc_cat=101" // <-- Replace this with your image path
               alt="darshan"
               className="object-cover w-full h-full"
             />
           </div>
 
           {/* Name */}
-          <h2 className="text-white text-2xl mb-5 font-bold">Aditya Shree</h2>
+          <div className="flex flex-col gap-4">
+            <h2 className="text-white text-2xl  font-bold">Darshan</h2>
+            <p className=" text-white tag text-md rounded-md py-1 px-2 font-semibold bg-gradient-to-r from-pink-500/30 to-purple-500/30">
+              Technical Support
+            </p>
 
-          {/* Role */}
-          <p className="text-pink-400 text-lg font-semibold mb-4">
-            99728 53628
-          </p>
+            {/* Name */}
+
+            {/* Role */}
+            <p className="text-pink-400 text-lg font-semibold ">8762001156</p>
+          </div>
 
           {/* Description */}
-          <p className="text-gray-300 text-sm">
-            Event coordination expert managing complex logistics and team
-            communications.
-          </p>
+        </div>
+
+        <div className="w-[460px] z-10 h-[350px]  bg-[#1E1E2D] rounded-xl p-6  flex flex-col items-center text-center shadow-lg">
+          {/* Profile Image */}
+          <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-pink-500 mb-4">
+            <img
+              src={rupesh} // <-- Replace this with your image path
+              alt="Rupesh"
+              className="object-cover w-full h-full"
+            />
+          </div>
+          <div className="flex flex-col gap-4">
+            <h2 className="text-white text-2xl  font-bold">Rupesh Reddy</h2>
+            <p className=" text-white tag text-md rounded-md py-1 px-2 font-semibold bg-gradient-to-r from-pink-500/30 to-purple-500/30">
+              Technical Support
+            </p>
+
+            {/* Name */}
+
+            {/* Role */}
+            <p className="text-pink-400 text-lg font-semibold ">9606027172</p>
+          </div>
+          {/* Description */}
         </div>
 
         {/* <div className="w-[460px] h-[350px]  bg-[#1E1E2D] rounded-xl p-6  flex flex-col items-center text-center shadow-lg">
