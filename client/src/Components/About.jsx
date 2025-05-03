@@ -10,7 +10,7 @@ import "../JavaScript/loader.js";
 const About = () => {
   return (
     <>
-      <div className="wrapper  mt-[920px] md:mt-14 ">
+      <div className="wrapper -mt-[800px] md:mt-0   ">
         <div id="stars" className="-z-10"></div>
         <div id="stars2" className="-z-10"></div>
         <div id="stars3" className="-z-10"></div>
