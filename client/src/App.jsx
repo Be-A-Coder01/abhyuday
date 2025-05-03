@@ -5,6 +5,7 @@ import Navbar from "./Components/Navbar";
 import EventInfo from "./Components/EventInfo";
 import RegistrationForm from "./Components/RegistrationForm";
 import Team from "./Components/Team";
+import About from "./Components/About";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Landing></Landing>} />
           <Route path="/events" element={<Events></Events>} />
+          <Route path="/about" element={<About />} />
           <Route path="/event-registration" element={<RegistrationForm />} />
           <Route path="/eventInfo" element={<EventInfo></EventInfo>} />
           <Route path="/members" element={<Team></Team>} />

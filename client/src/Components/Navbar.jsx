@@ -13,7 +13,7 @@ const Navbar = () => {
       <div>
         <ul className="flex text-[12px] py-3 gap-6 mr-4 md:text-lg md:font-semibold md:gap-10 md:mr-10 ">
           <Link to="/">Home</Link>
-          <li>About</li>
+          <Link to="/about">About</Link>
           <Link to="/events">Events</Link>
           <Link to="/members">Team</Link>
           <li>Broucher</li>
