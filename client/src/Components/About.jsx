@@ -10,14 +10,14 @@ import "../JavaScript/loader.js";
 const About = () => {
   return (
     <>
-      <div className="wrapper -mt-[800px] md:mt-0   ">
+      <div className="wrapper  md:mt-0   ">
         <div id="stars" className="-z-10"></div>
         <div id="stars2" className="-z-10"></div>
         <div id="stars3" className="-z-10"></div>
       </div>
       <Navbar></Navbar>
-      <div className=" mt-[100px]  md:mt-14  flex justify-center place-items-center h-screen">
-        <div className="text-white leading-5 tracking-widest md:text-center bg-[#0F1016] p-10 rounded-lg text-xs  md:tracking-widest md:text-xl md:leading-10 w-[90vw] ">
+      <div className=" mt-[300px]  md:mt-14  flex justify-center place-items-center h-screen">
+        <div className="text-white leading-5 tracking-widest md:text-center bg-[#7c8be3] p-10 rounded-lg text-xs  md:tracking-widest md:text-xl md:leading-10 w-[90vw] ">
           About <span className="text-pink-400 font-bold">Abhyuday 9.0</span> .
           The Department of Master of Computer Applications at{" "}
           <span className="text-pink-400 font-bold">
