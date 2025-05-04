@@ -106,7 +106,7 @@
   animation: gradientAnimation 5s infinite alternate;
 }
 
-.eventsPage::before {
+.EventsPage::before {
   content: "";
   background-image: url("./assets/bgPlanets.png");
   position: absolute;

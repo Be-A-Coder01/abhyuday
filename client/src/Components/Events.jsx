@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import React from "react";
 import "../CSS/aboutUs/aboutUs.css";
 import Navbar from "./Navbar";
@@ -10,6 +11,7 @@ import treasureHuntImg from "../assets/treasurehunt.png";
 
 import "../JavaScript/index.js";
 import "../JavaScript/loader.js";
+import "../CSS/common/loader.css";
 
 import gamingImg from "../assets/gaming.png";
 import ideathonImg from "../assets/ideathon.png";
@@ -27,8 +29,23 @@ const Events = () => {
     navigate("/eventInfo");
   };
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      document.getElementById("loader-wrapper").style.display = "none";
+      document.getElementById("eventsPage").style.display = "block";
+    }, 3000);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <>
+      <div
+        id="loader-wrapper"
+        className="load-wrapper"
+        style={{ display: "flex" }}
+      >
+        <div className="loader"></div>
+      </div>
       <div className="wrapper  ">
         <div id="stars" className="-z-10"></div>
         <div id="stars2" className="-z-10"></div>
@@ -37,7 +54,7 @@ const Events = () => {
 
       <Navbar></Navbar>
 
-      <div className=" h-[120vh]">
+      <div className=" h-[120vh]  " id="eventsPage" style={{ display: "none" }}>
         <p className="text-[20px] mt-20 pl-5 md:mt-20 md:my-10 lg:mt-30   text-white font-bold md:pl-10 my-5 pb-1 underline">
           Events
         </p>

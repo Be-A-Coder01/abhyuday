@@ -2,12 +2,21 @@ import React, { useState, useEffect } from "react";
 import "../App.css";
 import spaceship from "../assets/spaceshipp.png";
 import Navbar from "./Navbar";
+import "../CSS/common/loader.css";
 
 const Landing = () => {
-  // State to store the countdown time in seconds
   const [timeLeft, setTimeLeft] = useState(0);
 
-  // Function to calculate time remaining in seconds
+  // Loader logic - show loader, then show page after 3 seconds
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      document.getElementById("loader-wrapper").style.display = "none";
+      document.getElementById("landing").style.display = "block";
+    }, 3000);
+    return () => clearTimeout(timer);
+  }, []);
+
+  // Countdown logic
   const calculateTimeLeft = () => {
     const targetDate = new Date("May 16, 2025 00:00:00");
     const currentDate = new Date();
@@ -16,21 +25,19 @@ const Landing = () => {
     if (difference <= 0) {
       setTimeLeft(0);
     } else {
-      setTimeLeft(difference / 1000); // Store in seconds
+      setTimeLeft(difference / 1000);
     }
   };
 
-  // Update the countdown every second
   useEffect(() => {
     calculateTimeLeft();
     const interval = setInterval(() => {
-      setTimeLeft((prevTime) => prevTime - 1); // Decrement time by 1 second
+      setTimeLeft((prevTime) => Math.max(prevTime - 1, 0));
     }, 1000);
 
-    return () => clearInterval(interval); // Clear interval on component unmount
+    return () => clearInterval(interval);
   }, []);
 
-  // Convert the remaining time in seconds to days, hours, minutes, and seconds
   const getTime = () => {
     const days = Math.floor(timeLeft / (3600 * 24));
     const hours = Math.floor((timeLeft % (3600 * 24)) / 3600);
@@ -44,8 +51,17 @@ const Landing = () => {
 
   return (
     <>
-      <div id="landing" className="relative">
-        {/* Navbar */}
+      {/* Loader Wrapper */}
+      <div
+        id="loader-wrapper"
+        className="load-wrapper"
+        style={{ display: "flex" }}
+      >
+        <div className="loader"></div>
+      </div>
+
+      {/* Main Content */}
+      <div id="landing" className="relative" style={{ display: "none" }}>
         <Navbar />
 
         {/* Overlay and Text */}
@@ -54,36 +70,28 @@ const Landing = () => {
           <h2 className="text-[30px] md:text-[25px] font-bold lg:text-[70px] text-shadow-custom">
             Abhyuday Vol 9.0
           </h2>
-          <h1 className="text-[13px] font-black w-screem  md:text-[40px] md:w-screen lg:border-none lg:text-[30px] lg:w-[90vw]">
+          <h1 className="text-[13px] font-black w-screen md:text-[40px] lg:text-[30px] lg:w-[90vw]">
             Master Of Computer Applications
           </h1>
 
           {/* Countdown Timer */}
-          <div className="countdown-timer gap-5 md:gap-10   ">
-            <div className="timer-box h-[10px] w-[70px] rounded-md md:rounded-3xl  md:h-[30px] md:w-[30px] lg:w-[100px] lg:h-[120px]">
-              <p className="  text-[12px] md:text-[24px] lg:text-[48px]">
-                {String(days).padStart(2, "0")}
-              </p>
-              <span className="text-[10px] lg:text-[16px]">Days</span>
-            </div>
-            <div className="timer-box h-[30px] w-[70px] border-2 border-red-800 rounded-md md:rounded-2xl md:h-[30px] md:w-[30px] lg:w-[100px] lg:h-[120px]">
-              <p className="text-[12px] md:text-[24px] lg:text-[48px]">
-                {String(hours).padStart(2, "0")}
-              </p>
-              <span className="text-[10px] lg:text-[16px]">Hours</span>
-            </div>
-            <div className="timer-box h-[30px] w-[70px] md:h-[30px] md:w-[30px] rounded-md md:rounded-2xl lg:w-[100px] lg:h-[120px]">
-              <p className=" text-[12px] md:text-[24px] lg:text-[48px]">
-                {String(minutes).padStart(2, "0")}
-              </p>
-              <span className="text-[10px] lg:text-[16px]">Minutes</span>
-            </div>
-            <div className="timer-box sm:filt h-[30px] w-[70px] md:h-[30px] md:w-[30px] rounded-md md:rounded-2xl lg:w-[100px] lg:h-[120px]">
-              <p className="text-[12px] md:text-[24px] lg:text-[48px]">
-                {String(seconds).padStart(2, "0")}
-              </p>
-              <span className="text-[10px] lg:text-[16px]">Seconds</span>
-            </div>
+          <div className="countdown-timer gap-5 md:gap-10">
+            {[
+              { label: "Days", value: days },
+              { label: "Hours", value: hours },
+              { label: "Minutes", value: minutes },
+              { label: "Seconds", value: seconds },
+            ].map((item, i) => (
+              <div
+                key={i}
+                className="timer-box h-[30px] w-[70px] rounded-md md:rounded-2xl md:h-[30px] md:w-[30px] lg:w-[100px] lg:h-[120px]"
+              >
+                <p className="text-[12px] md:text-[24px] lg:text-[48px]">
+                  {String(item.value).padStart(2, "0")}
+                </p>
+                <span className="text-[10px] lg:text-[16px]">{item.label}</span>
+              </div>
+            ))}
           </div>
         </div>
 
