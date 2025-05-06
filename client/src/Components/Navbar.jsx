@@ -5,42 +5,27 @@ import "../App.css";
 
 const Navbar = () => {
   const pdf_file = "http://localhost:5174/Abhyuday.pdf";
-  const downloadFile = (url) => {
-    const fileName = url.split("/").pop();
-    const aTag = document.createElement("a");
-    aTag.href = url;
-    aTag.setAttribute("download", fileName);
-    document.body.appendChild(aTag);
-    aTag.click();
-    aTag.remove();
-  };
+
   return (
-    <div className=" z-20 bg-opacity-30 backdrop-blur-lg backdrop-filter fixed gap-y-3.5 top-0 flex flex-col md:flex-row right-0 left-0 justify-between py-3 md:py-5 text-center text-white bg-transparent place-items-center">
+    <div className="z-20 bg-opacity-30 backdrop-blur-lg backdrop-filter fixed gap-y-3.5 top-0 flex flex-col md:flex-row right-0 left-0 justify-between py-3 md:py-5 text-center text-white bg-transparent place-items-center">
       <div>
-        <p className="text-[10px] ml-5 md:h-[20px] md:font-bold md:ml-11 ">
-          <img src={logo} className="  h-[30px] md:h-[45px]" />
+        <p className="text-[10px] ml-5 md:h-[20px] md:font-bold md:ml-11">
+          <img src={logo} className="h-[30px] md:h-[45px]" alt="Brand Logo" />
         </p>
       </div>
       <div>
-        <ul className="flex text-[12px] py-3 gap-6  md:text-lg md:font-semibold md:gap-10 md:mr-10 ">
+        <ul className="flex text-[12px] py-3 gap-6 md:text-lg md:font-semibold md:gap-10 md:mr-10">
           <Link to="/">Home</Link>
           <Link to="/about">About</Link>
           <Link to="/events">Events</Link>
           <Link to="/members">Team</Link>
-          <li
-            className="broucher"
-            // onClick={() => {
-            //   downloadFile(pdf_file);
-            // }}
+          <a
+            href={pdf_file}
+            download
+            className="broucher text-[12px] md:text-lg md:font-semibold"
           >
-            <a
-              href={pdf_file}
-              download
-              className="broucher text-[12px] md:text-lg md:font-semibold"
-            >
-              Brochure
-            </a>
-          </li>
+            Brochure
+          </a>
         </ul>
       </div>
     </div>
