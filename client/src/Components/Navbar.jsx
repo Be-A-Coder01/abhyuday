@@ -29,11 +29,17 @@ const Navbar = () => {
           <Link to="/members">Team</Link>
           <li
             className="broucher"
-            onClick={() => {
-              downloadFile(pdf_file);
-            }}
+            // onClick={() => {
+            //   downloadFile(pdf_file);
+            // }}
           >
-            Broucher
+            <a
+              href={pdf_file}
+              download
+              className="broucher text-[12px] md:text-lg md:font-semibold"
+            >
+              Brochure
+            </a>
           </li>
         </ul>
       </div>
