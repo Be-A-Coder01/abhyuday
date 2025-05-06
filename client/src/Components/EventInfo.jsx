@@ -39,7 +39,7 @@ const EventInfo = () => {
 
   let eventFlow = {
     uiux: {
-      title: "Gamora’s UI Forge & Adam’s Cosmic Interface",
+      title: "Gamora’s UI Forge ",
       count: 3,
       charcater: "gamora",
       shortDetail:
