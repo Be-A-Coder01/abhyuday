@@ -42,13 +42,16 @@ const EventInfo = () => {
       title: "Gamora’s UI Forge & Adam’s Cosmic Interface",
       count: 3,
       charcater: "gamora",
+      shortDetail:
+        "Design intuitive and attractive user interfaces while showcasing creativity and problem-solving in crafting seamless user experiences for real-world problems.",
       overview:
         "This event will test pariticipants on their creativity, UI/UX design skills and ability to implement designsinto working prototypes. THe evnt consist of two consecutive rounds:Ideation and Implementation",
       location: "AIML Lab 2",
       discription:
         " This event will test pariticipants on their creativity , UI/UX design skills and ability to implement designs into working prototypes. THe evnt consist of two consecutive rounds:Ideation and Implementation",
       rule1: "Static and Dynamic website designing event.",
-      rule2: "TechStack allowed - (Figma , Cancva , Adobe XD)",
+      rule2:
+        "TechStack allowed - (Figma , Cancva , Adobe XD , HTML , CSS , JS)",
       rule3: "No. of participants : 2-3",
       rule4: "Each college may register a maximum of 2 teams",
       timing: "10am to 1pm",
@@ -73,6 +76,8 @@ const EventInfo = () => {
       count: 2,
       charcater: "cosmoDog",
       location: "Lab",
+      shortDetail:
+        "Test your tech knowledge in a thrilling quiz covering programming, hardware, software, and current trends in the IT world.",
       overview:
         "This event will test participants on their overall knowledge, speed, and accuracy in the field of Information Technology. It aims to engage tech enthusiasts in a fun yet competitive environment that encourages quick thinking and smart decision-making. The quiz is designed to not only assess theoretical understanding but also promote curiosity and awareness of the ever-evolving tech world. ",
       discription:
@@ -103,6 +108,8 @@ const EventInfo = () => {
       title: "Nebula’s Cyber Takeover",
       count: 3,
       charcater: "nebula",
+      shortDetail:
+        "Showcase your programming skills by solving real-time coding challenges under pressure—logic, speed, and accuracy will lead you to victory.",
       overview:
         "This event will challenge participants on their coding skills, logical thinking, and problem-solving abilities. It aims to provide an engaging platform where programmers can showcase their talent, creativity, and technical precision under time constraints. Participants will be expected to think critically, write efficient code, and debug effectively to solve given tasks.",
       location: "MCA Lab 2",
@@ -134,6 +141,8 @@ const EventInfo = () => {
       title: "Drax’s Power Pitch",
       count: 1,
       charcater: "drax",
+      shortDetail:
+        "Pitch groundbreaking tech ideas to solve real-world problems—innovate, collaborate, and impress judges with your originality and vision.",
       overview:
         "This event encourages participants to think creatively and come up with innovative solutions to real-world problems. It is designed to spark ideation, critical thinking, and collaborative brainstorming in a time-bound environment. ",
       location: "AB411",
@@ -164,6 +173,8 @@ const EventInfo = () => {
       title: "Rocket’s Relic Raid",
       count: 3,
       charcater: "rocket",
+      shortDetail:
+        "Crack codes, solve tech-based riddles, and follow digital clues across campus in this thrilling tech-themed treasure hunt adventure.",
       overview:
         "This event is designed to test participants’ problem-solving skills, teamwork, and presence of mind through a series of exciting clues and challenges. Participants will race against time, decoding hints and navigating through different stages to find the final treasure. The event combines logic, observation, and strategy in a fun and energetic atmosphere, promoting collaboration and quick thinking. Each clue will bring them closer to the goal, making the journey as thrilling as the destination. ",
       location: "AB412",
@@ -195,6 +206,8 @@ const EventInfo = () => {
       title: "Groot’s Game Grid",
       count: 3,
       charcater: "groot",
+      shortDetail:
+        "Battle it out in high-octane eSports matches—showcase reflexes, strategy, and teamwork in a thrilling gaming showdown.",
       overview:
         "This event is all about excitement, strategy, and fast-paced action, offering participants a chance to showcase their gaming skills in a competitive environment. It promotes teamwork, quick reflexes, and tactical thinking as players go head-to-head in popular games. Whether you're a casual gamer or a hardcore enthusiast, this event promises high energy and intense gameplay. ",
       location: "MCA Lab 1",
@@ -225,6 +238,8 @@ const EventInfo = () => {
       title: "Star Lord’s IT Command",
       count: 1,
       charcater: "starLord",
+      shortDetail:
+        "Prove your leadership in tech management through rounds of crisis handling, decision-making, pitching, and real-world IT scenario simulations.",
       overview:
         "This event is crafted to test participants on their decision-making, leadership, and problem-solving skills in real-world IT management scenarios. Participants will step into the shoes of an IT manager, facing simulated challenges that require strategic thinking, resource management, and effective communication. The event promotes a balance of technical knowledge and managerial acumen, encouraging participants to think critically and lead with confidence.",
       location: "Seminar Hall",
@@ -257,6 +272,8 @@ const EventInfo = () => {
       title: "Hulk’s Smash Clicks",
       count: 1,
       charcater: "hulk",
+      shortDetail:
+        "Capture compelling moments, perspectives, and emotions through your lens—show your storytelling skills with creativity and technical finesse.",
       overview:
         "This event celebrates the art of storytelling through the lens, challenging participants to capture moments that speak volumes. It encourages creativity, attention to detail, and a unique perspective on everyday scenes. Participants will be judged on composition, originality, and the ability to convey emotion or a message through their photographs.",
       location: "AB402",
@@ -370,9 +387,7 @@ const EventInfo = () => {
                     <time class=" text-gray-400 dark:text-gray-500 ">
                       <div className="details ml-2  w-[75vw] md:ml-9 md:w-3/4 lg:ml-9 bg-[#1E1E2D] lg:w-2/4  rounded-lg">
                         <p className="text-[#D2D2D5]">
-                          Test your knowledge of Cosmo, the telepathic Soviet
-                          space dog and Knowhere's security chief, from Marvel's
-                          cosmic adventures.
+                          {eventFlow[currentEvent]?.shortDetail}
                         </p>
                         <div className="flex flex-col  mt-4 ">
                           <div className="">

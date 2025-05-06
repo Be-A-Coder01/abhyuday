@@ -1,8 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/brandLogo.png";
+import "../App.css";
 
 const Navbar = () => {
+  const pdf_file = "http://localhost:5174/Abhyuday.pdf";
+  const downloadFile = (url) => {
+    const fileName = url.split("/").pop();
+    const aTag = document.createElement("a");
+    aTag.href = url;
+    aTag.setAttribute("download", fileName);
+    document.body.appendChild(aTag);
+    aTag.click();
+    aTag.remove();
+  };
   return (
     <div className=" z-20 bg-opacity-30 backdrop-blur-lg backdrop-filter fixed gap-y-3.5 top-0 flex flex-col md:flex-row right-0 left-0 justify-between py-3 md:py-5 text-center text-white bg-transparent place-items-center">
       <div>
@@ -16,7 +27,14 @@ const Navbar = () => {
           <Link to="/about">About</Link>
           <Link to="/events">Events</Link>
           <Link to="/members">Team</Link>
-          <li>Broucher</li>
+          <li
+            className="broucher"
+            onClick={() => {
+              downloadFile(pdf_file);
+            }}
+          >
+            Broucher
+          </li>
         </ul>
       </div>
     </div>

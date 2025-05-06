@@ -15,6 +15,8 @@ import prithvi from "../assets/prithvi.jpeg";
 import aditya from "../assets/aditya.jpg";
 import blen from "../assets/blen.jpeg";
 import darshan from "../assets/darshan.jpeg";
+import hod from "../assets/hod.jpg";
+import mam from "../assets/geetaMam.jpg";
 
 const Team = () => {
   return (
@@ -29,6 +31,56 @@ const Team = () => {
 
       <div className=" z-10 flex flex-row flex-wrap pt-48 py-20  px-7 gap-9">
         {/* start */}
+
+        <div className="w-[460px] z-10 h-[350px]  bg-[#1E1E2D] rounded-xl p-6  flex flex-col items-center text-center shadow-lg">
+          {/* Profile Image */}
+          <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-pink-500 mb-4">
+            <img
+              src={hod} // <-- Replace this with your image path
+              alt="Jeevitha"
+              className="object-cover w-full h-full"
+            />
+          </div>
+
+          {/* Name */}
+          <div className="flex flex-col gap-4">
+            <h2 className="text-white text-2xl  font-bold">Dr. S. Ajitha</h2>
+            <p className=" text-white tag text-md rounded-md py-1 px-2 font-semibold bg-gradient-to-r from-pink-500/30 to-purple-500/30">
+              Head of Department
+            </p>
+
+            {/* Name */}
+
+            {/* Role */}
+          </div>
+          {/* Description */}
+        </div>
+
+        <div className="w-[460px] z-10 h-[350px]  bg-[#1E1E2D] rounded-xl p-6  flex flex-col items-center text-center shadow-lg">
+          {/* Profile Image */}
+          <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-pink-500 mb-4">
+            <img
+              src={mam} // <-- Replace this with your image path
+              alt="Jeevitha"
+              className="object-cover w-full h-full"
+            />
+          </div>
+
+          {/* Name */}
+          <div className="flex flex-col gap-4">
+            <h2 className="text-white text-2xl  font-bold">
+              Dr. D. Evangelin Geetha
+            </h2>
+            <p className=" text-white tag text-md rounded-md py-1 px-2 font-semibold bg-gradient-to-r from-pink-500/30 to-purple-500/30">
+              Faculty Coordinator
+            </p>
+
+            {/* Name */}
+
+            {/* Role */}
+          </div>
+          {/* Description */}
+        </div>
 
         <div className="w-[460px] z-10 h-[350px]  bg-[#1E1E2D] rounded-xl p-6  flex flex-col items-center text-center shadow-lg">
           {/* Profile Image */}

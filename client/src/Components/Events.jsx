@@ -83,8 +83,9 @@ const Events = () => {
               </p>
               <p className=" text-[#D2D2CA] text-lg  md:text-sm">16 May 2025</p>
               <p className="line-clamp-2 text-lg  md:text-sm text-[#D2D2D5] font-semibold">
-                Experience ipsum dolor sit amet consectetur adipisicing elit.
-                Sapiente vel doloremque omnis
+                Test your tech knowledge in a thrilling quiz covering
+                programming, hardware, software, and current trends in the IT
+                world.
               </p>
             </div>
           </div>
@@ -111,8 +112,9 @@ const Events = () => {
                 16 May 2025
               </p>
               <p className="line-clamp-2 text-lg  md:text-sm text-[#D2D2D5] font-semibold">
-                Experience ipsum dolor sit amet consectetur adipisicing elit.
-                Sapiente vel doloremque omnis
+                Showcase your programming skills by solving real-time coding
+                challenges under pressure—logic, speed, and accuracy will lead
+                you to victory.
               </p>
             </div>
           </div>
@@ -137,8 +139,9 @@ const Events = () => {
               </p>
               <p className=" text-[#D2D2CA] text-lg  md:text-sm">16 May 2025</p>
               <p className="line-clamp-2 text-lg  md:text-sm text-[#D2D2D5] font-semibold">
-                Experience ipsum dolor sit amet consectetur adipisicing elit.
-                Sapiente vel doloremque omnis
+                Design intuitive and attractive user interfaces while showcasing
+                creativity and problem-solving in crafting seamless user
+                experiences for real-world problems.
               </p>
             </div>
           </div>
@@ -163,8 +166,9 @@ const Events = () => {
               </p>
               <p className=" text-[#D2D2CA] text-lg  md:text-sm">16 May 2025</p>
               <p className="line-clamp-2 text-lg  md:text-sm text-[#D2D2D5] font-semibold">
-                Experience ipsum dolor sit amet consectetur adipisicing elit.
-                Sapiente vel doloremque omnis
+                Crack codes, solve tech-based riddles, and follow digital clues
+                across campus in this thrilling tech-themed treasure hunt
+                adventure.
               </p>
             </div>
           </div>
@@ -189,8 +193,8 @@ const Events = () => {
               </p>
               <p className=" text-[#D2D2CA] text-lg  md:text-sm">16 May 2025</p>
               <p className="line-clamp-2 text-lg  md:text-sm text-[#D2D2D5] font-semibold">
-                Experience ipsum dolor sit amet consectetur adipisicing elit.
-                Sapiente vel doloremque omnis
+                Battle it out in high-octane eSports matches—showcase reflexes,
+                strategy, and teamwork in a thrilling gaming showdown.
               </p>
             </div>
           </div>
@@ -215,8 +219,9 @@ const Events = () => {
               </p>
               <p className=" text-[#D2D2CA] text-lg  md:text-sm">16 May 2025</p>
               <p className="line-clamp-2 text-lg  md:text-sm text-[#D2D2D5] font-semibold">
-                Experience ipsum dolor sit amet consectetur adipisicing elit.
-                Sapiente vel doloremque omnis
+                Pitch groundbreaking tech ideas to solve real-world
+                problems—innovate, collaborate, and impress judges with your
+                originality and vision.
               </p>
             </div>
           </div>
@@ -241,8 +246,9 @@ const Events = () => {
               </p>
               <p className=" text-[#D2D2CA] text-lg  md:text-sm">16 May 2025</p>
               <p className="line-clamp-2 text-lg  md:text-sm text-[#D2D2D5] font-semibold">
-                Experience ipsum dolor sit amet consectetur adipisicing elit.
-                Sapiente vel doloremque omnis
+                Prove your leadership in tech management through rounds of
+                crisis handling, decision-making, pitching, and real-world IT
+                scenario simulations.
               </p>
             </div>
           </div>
@@ -267,8 +273,9 @@ const Events = () => {
               </p>
               <p className=" text-[#D2D2CA] text-lg  md:text-sm">16 May 2025</p>
               <p className="line-clamp-2 text-lg  md:text-sm text-[#D2D2D5] font-semibold">
-                Experience ipsum dolor sit amet consectetur adipisicing elit.
-                Sapiente vel doloremque omnis
+                Capture compelling moments, perspectives, and emotions through
+                your lens—show your storytelling skills with creativity and
+                technical finesse.
               </p>
             </div>
           </div>

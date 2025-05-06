@@ -71,7 +71,7 @@ const Landing = () => {
             Abhyuday Vol 9.0
           </h2>
           <h1 className="text-[13px] font-black w-screen md:text-[40px] lg:text-[30px] lg:w-[90vw]">
-            Master Of Computer Applications
+            Master of Computer Applications
           </h1>
 
           {/* Countdown Timer */}
