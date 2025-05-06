@@ -2,10 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/brandLogo.png";
 import "../App.css";
-
+import pdf from "../../public/Abhyuday.pdf";
 const Navbar = () => {
-  const pdf_file = "http://localhost:5174/Abhyuday.pdf";
-
   return (
     <div className="z-20 bg-opacity-30 backdrop-blur-lg backdrop-filter fixed gap-y-3.5 top-0 flex flex-col md:flex-row right-0 left-0 justify-between py-3 md:py-5 text-center text-white bg-transparent place-items-center">
       <div>
@@ -20,8 +18,7 @@ const Navbar = () => {
           <Link to="/events">Events</Link>
           <Link to="/members">Team</Link>
           <a
-            href={pdf_file}
-            download
+            href={pdf}
             className="broucher text-[12px] md:text-lg md:font-semibold"
           >
             Brochure
