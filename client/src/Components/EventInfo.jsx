@@ -398,7 +398,7 @@ const EventInfo = () => {
                               {eventFlow[currentEvent]?.timing}
                             </p>
                           </div>
-                          <div className="">
+                          {/* <div className="">
                             <p className="sub-head font-bold text-xl md:text-2xl lg:text-xl  mt-5">
                               Prizes
                             </p>
@@ -410,7 +410,7 @@ const EventInfo = () => {
                                 {eventFlow[currentEvent]?.Prizes.second}
                               </li>
                             </div>
-                          </div>
+                          </div> */}
                         </div>
                       </div>
                     </time>
